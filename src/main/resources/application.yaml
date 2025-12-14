@@ -2,15 +2,12 @@ spring:
   application:
     name: devicemanagement
   datasource:
-    url: jdbc:postgresql://localhost:5432/devicemanagement
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
-
-    jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
+    url: jdbc:postgresql://localhost:5432/devices
+    username: devices
+    password: devices
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true

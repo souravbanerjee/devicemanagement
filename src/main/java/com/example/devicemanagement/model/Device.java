@@ -2,12 +2,13 @@ package com.example.devicemanagement.model;
 
 import com.example.devicemanagement.enums.DeviceState;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.Instant;
 import java.util.UUID;
 
 @Entity
-
+@Data
 @Table(name = "devices")
 public class Device {
 
